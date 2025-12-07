@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: cardapi
+erver:
+  port: 9092
+
+card:
+  cardno: 12345
+  type: creditcard-dev
+  cardinfo:
+    name: pit-dev
+    email: dev@123
+  onCallSupport:
+    -(91)1234567890
+    -(91)0987654321

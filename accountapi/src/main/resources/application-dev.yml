@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: accountapi
+
+
+server:
+  port: 9090
+account:
+  accountno: 12345
+  type: saving-dev
+  accountinfo:
+    name: pit-dev
+    email: dev@123
+  onCallSupport:
+    -(91)1234567890
+    -(91)0987654321

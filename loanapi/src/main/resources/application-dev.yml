@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: loanapi
+
+server:
+  port: 9091
+
+loan:
+  loanno: 12345
+  type: loan-dev
+  loaninfo:
+    name: pit-dev
+    email: dev@123
+  onCallSupport:
+    -(91)1234567890
+    -(91)0987654321

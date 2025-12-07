@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: loanapi
+
+server:
+  port: 9091
+card:
+  loanno: 12345-qa
+  type: loan-qa
+  loaninfo:
+    name: pit-qa
+    email: qa@123
+  onCallSupport:
+    -(91)1234567890
+    -(91)0987654321
