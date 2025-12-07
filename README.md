@@ -1,0 +1,2 @@
+# easypit
+repo for devops 
