@@ -1,0 +1,73 @@
+services:
+  configserver:
+    image: "pdocker80/configserver:v2"
+    container_name: confidserver-ms
+    ports:
+      - "8071:8071"
+    healthcheck:
+      test: "curl --fail --silent localhost:8071/actuator/health/readiness | grep UP || exit 1"
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - piteasy
+
+  accounts:
+    image: "pdocker80/accounts:v2"
+    container_name: accounts-ms
+    ports:
+      - "8080:9090"
+    depends_on:
+      configserver:
+        condition: service_healthy
+    environment:
+      SPRING_PROFILES_ACTIVE: default
+      SPRING_CONFIG_IMPORT: configserver:http://configserver:8071/
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - piteasy
+  loans:
+    image: "pdocker80/loans:v2"
+    container_name: loans-ms
+    ports:
+      - "8081:9091"
+    depends_on:
+      configserver:
+        condition: service_healthy
+    environment:
+      SPRING_PROFILES_ACTIVE: default
+      SPRING_CONFIG_IMPORT: configserver:http://configserver:8071/
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - piteasy
+  cards:
+    image: "pdocker80/cards:v2"
+    container_name: cards-ms
+    ports:
+      - "8082:9092"
+    depends_on:
+      configserver:
+        condition: service_healthy
+    environment:
+      SPRING_PROFILES_ACTIVE: default
+      SPRING_CONFIG_IMPORT: configserver:http://configserver:8071/
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - piteasy
+networks:
+  piteasy:
+    driver: "bridge"

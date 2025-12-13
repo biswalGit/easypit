@@ -1,0 +1,9 @@
+account:
+  accountno: 12345-wa
+  type: saving-qa
+  accountinfo:
+    name: pit-qa
+    email: qa@123
+  onCallSupport:
+    -(91)1234567890
+    -(91)0987654321

@@ -1,0 +1,9 @@
+account:
+  accountno: 12345-prod
+  type: saving-prod
+  accountinfo:
+    name: pit-prod
+    email: prod@123
+  onCallSupport:
+    -(91)1234567890
+    -(91)0987654321

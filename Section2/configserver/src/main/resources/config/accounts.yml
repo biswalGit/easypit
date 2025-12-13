@@ -1,0 +1,9 @@
+account:
+  accountno: 12345-default
+  type: saving-default
+  accountinfo:
+    name: pit-default
+    email: default@123
+  onCallSupport:
+    -(91)1234567890
+    -(91)0987654321

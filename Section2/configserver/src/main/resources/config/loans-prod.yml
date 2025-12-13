@@ -1,0 +1,9 @@
+loan:
+  loanno: 12345678-prod
+  type: loan-prod
+  loaninfo:
+    name: pit-prod
+    email: prod@123
+  onCallSupport:
+    -(91)1234567891
+    -(91)0987654322
