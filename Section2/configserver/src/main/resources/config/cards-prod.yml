@@ -1,6 +1,6 @@
 card:
   cardno: 12345678-prod-classpath
-  type: prodcreditcard-prod-classpath
+  type: prodcreditcard-production-classpath
   cardinfo:
     name: pit-prod
     email: prod@123
