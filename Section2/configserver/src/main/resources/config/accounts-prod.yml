@@ -1,5 +1,5 @@
 account:
-  accountno: 12345-prod-classpath
+  accountno: b067e3250992f9e7cedae402f0bdfbec7d9f486277e7e6aab0f284ff83758bf35a8de8522e182bd31eb911e86f7862e9
   type: saving-prod
   accountinfo:
     name: pit-prod-classpath
