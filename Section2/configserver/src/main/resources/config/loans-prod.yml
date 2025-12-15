@@ -1,6 +1,6 @@
 loan:
   loanno: 12345678-prod-classpath
-  type: loan-prod-classpath
+  type: loan-production-classpath
   loaninfo:
     name: pit-prod
     email: prod@123
