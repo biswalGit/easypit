@@ -1,6 +1,6 @@
 loan:
-  loanno: 12345
-  type: loan-default
+  loanno: 12345-classpath
+  type: loan-default-classpath
   loaninfo:
     name: pit-default
     email: default@123

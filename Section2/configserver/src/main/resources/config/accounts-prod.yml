@@ -1,8 +1,8 @@
 account:
-  accountno: 12345-prod
+  accountno: 12345-prod-classpath
   type: saving-prod
   accountinfo:
-    name: pit-prod
+    name: pit-prod-classpath
     email: prod@123
   onCallSupport:
     -(91)1234567890

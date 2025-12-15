@@ -1,6 +1,6 @@
 card:
-  cardno: 12345-qa
-  type: creditcard-qa
+  cardno: 12345-qa-classpath
+  type: creditcard-qa-classpath
   cardinfo:
     name: pit-qa
     email: qa@123

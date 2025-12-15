@@ -1,6 +1,6 @@
 account:
-  accountno: 12345-wa
-  type: saving-qa
+  accountno: 12345-qa-classpath
+  type: saving-qa-classpath
   accountinfo:
     name: pit-qa
     email: qa@123

@@ -1,6 +1,6 @@
 loan:
-  loanno: 12345-qa
-  type: loan-qa
+  loanno: 12345-qa-classpath
+  type: loan-qa-classpath
   loaninfo:
     name: pit-qa
     email: qa@123

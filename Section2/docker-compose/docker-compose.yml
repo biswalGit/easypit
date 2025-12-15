@@ -14,8 +14,9 @@ services:
       resources:
         limits:
           memory: 700m
-    networks:
-      - piteasy
+    extends:
+      file: common-config.yml
+      service: network-deploy-service
 
   accounts:
     image: "pdocker80/accounts:v2"
@@ -32,8 +33,9 @@ services:
       resources:
         limits:
           memory: 700m
-    networks:
-      - piteasy
+    extends:
+      file: common-config.yml
+      service: network-deploy-service
   loans:
     image: "pdocker80/loans:v2"
     container_name: loans-ms
@@ -49,8 +51,9 @@ services:
       resources:
         limits:
           memory: 700m
-    networks:
-      - piteasy
+    extends:
+      file: common-config.yml
+      service: network-deploy-service
   cards:
     image: "pdocker80/cards:v2"
     container_name: cards-ms
@@ -66,8 +69,9 @@ services:
       resources:
         limits:
           memory: 700m
-    networks:
-      - piteasy
+    extends:
+      file: common-config.yml
+      service: network-deploy-service
 networks:
   piteasy:
     driver: "bridge"

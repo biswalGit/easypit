@@ -1,6 +1,6 @@
 card:
-  cardno: 12345
-  type: creditcard-dev
+  cardno: 12345-classpath
+  type: creditcard-dev-classpath
   cardinfo:
     name: pit-dev
     email: dev@123
