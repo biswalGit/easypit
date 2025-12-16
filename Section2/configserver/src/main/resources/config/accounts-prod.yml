@@ -1,8 +1,8 @@
 account:
-  accountno: 12345-prod-classpath
+  accountno: "{cipher}b067e3250992f9e7cedae402f0bdfbec7d9f486277e7e6aab0f284ff83758bf35a8de8522e182bd31eb911e86f7862e9"
   type: saving-prod
   accountinfo:
-    name: pit-prod-classpath
+    name: pit-production-classpath
     email: prod@123
   onCallSupport:
     -(91)1234567890
